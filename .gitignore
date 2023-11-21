@@ -10,3 +10,6 @@
 
 # Executables
 *.exe
+
+# ignore my uncompleted queue
+Uncompleted Queue/

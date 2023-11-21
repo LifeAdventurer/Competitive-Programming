@@ -1,2 +1,9 @@
+# desktop.ini
+*.ini
+
+# competitive programming helper folder
 *.bin
 *.cph
+
+# Executables
+*.exe

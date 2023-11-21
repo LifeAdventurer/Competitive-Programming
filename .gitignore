@@ -1,3 +1,6 @@
+# .vscode folder for running C++ on vscode
+*.vscode
+
 # desktop.ini
 *.ini
 

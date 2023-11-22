@@ -26,7 +26,7 @@ int main() {
   cin >> n;
   for(int i = 0; i < (1 << n); ++i){
     for(int j = n - 1; j >= 0; --j){
-      cout << ((i & (1 << j)) > 0);
+      cout << ((i & (1 << j)));
     }
     cout << '\n';
   }

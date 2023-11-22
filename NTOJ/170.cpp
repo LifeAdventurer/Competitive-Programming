@@ -12,7 +12,7 @@
  *	  mood: ^_^   weather: sunny
  *
 **/
-#pragma GCC optimize("Ofast,03,unroll-loops")
+#pragma GCC optimize("Ofast,unroll-loops")
 #include <bits/stdc++.h>
 
 using namespace std;

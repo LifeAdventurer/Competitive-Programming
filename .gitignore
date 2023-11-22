@@ -13,3 +13,6 @@
 
 # ignore my uncompleted queue
 Uncompleted Queue/
+
+# ignore some input.txt and output.txt
+*.txt

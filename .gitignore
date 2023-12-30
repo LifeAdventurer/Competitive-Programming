@@ -14,5 +14,7 @@
 # ignore my uncompleted queue
 Uncompleted Queue/
 
+Contest_playground/
+
 # ignore some input.txt and output.txt
 *.txt

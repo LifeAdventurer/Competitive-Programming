@@ -1,9 +1,6 @@
 @echo off
 
-echo Deleting .bin files...
-del /s /q *.bin
-
-echo Deleting .exe files...
-del /s /q *.exe
+echo Deleting .bin and .exe files...
+del /s /q *.bin *.exe
 
 echo Deletion complete.

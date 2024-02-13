@@ -22,30 +22,30 @@ using namespace std;
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(0);
-  //freopen("A2_input.txt","r",stdin);
-  //freopen("A2_output.txt","w",stdout);
+  freopen("input.txt","r",stdin);
+  freopen("output.txt","w",stdout);
   int t;
-  cin >> t;
   int cases = 1;
+  cin >> t;
   while(t--){
     int n, k;
     cin >> n >> k;
-    vector<int> v(n), a(n);
-    for(int i = 0; i < n; ++i){
-      cin >> v[i];
-    }
+    map<int, int> m;
+	  vector<int> a(n), b(n);
     for(int i = 0; i < n; ++i){
       cin >> a[i];
     }
-    int cycle = n / (n % 2 == 0 ? 2 : 1);
-	  k %= cycle;
-    bool ok = true;
     for(int i = 0; i < n; ++i){
-      if(v[(i + k * 2) % n] != a[i]){
-		ok = false;
-		break;
-	  }
+      cin >> b[i];
+      m[b[i]] = i;
     }
+    bool ok = true;
+    set<int> s;
+	  for(int i = 0; i < n; ++i){
+    	s.insert((m[a[i]] - i + n) % n);
+	  }
+	  if(k == 0 && (!s.count(0) || s.size() != 1)) ok = false;
+	  else if(s.size() > 1) ok = false;
     cout << "Case #" << cases << ": " << (ok ? "YES\n" : "NO\n");
     cases++;
   }
